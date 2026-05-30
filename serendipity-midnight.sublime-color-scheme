@@ -1,0 +1,211 @@
+{
+  "name": "Serendipity Midnight",
+  "author": "Michael Andreuzza",
+  "variables": {
+    "bg": "#151726",
+    "fg": "#dee0ef",
+    "caret": "#d1918f",
+    "selection": "#6B6D7C33",
+    "comment": "#6b6d7c",
+    "keyword": "#5ba2d0",
+    "string": "#a78bfa",
+    "function": "#ee8679",
+    "variable": "#f8d2c9",
+    "type": "#94b8ff",
+    "constant": "#5ba2d0",
+    "invalid": "#ee8679"
+  },
+  "globals": {
+    "background": "var(bg)",
+    "foreground": "var(fg)",
+    "caret": "var(caret)",
+    "block_caret": "var(caret)",
+    "line_highlight": "color(var(fg) alpha(0.06))",
+    "misspelling": "var(invalid)",
+    "fold_marker": "var(type)",
+    "minimap_border": "color(var(fg) alpha(0.20))",
+    "accent": "var(caret)",
+    "selection": "var(selection)",
+    "selection_border": "color(var(caret) alpha(0.50))",
+    "selection_border_width": "1",
+    "inactive_selection": "color(var(fg) alpha(0.07))",
+    "selection_corner_style": "round",
+    "highlight": "color(var(caret) alpha(0.60))",
+    "find_highlight": "var(caret)",
+    "find_highlight_foreground": "var(bg)",
+    "guide": "color(var(fg) alpha(0.10))",
+    "active_guide": "color(var(caret) alpha(0.55))",
+    "stack_guide": "color(var(fg) alpha(0.18))",
+    "gutter": "var(bg)",
+    "gutter_foreground": "color(var(comment) alpha(0.80))",
+    "line_diff_added": "var(type)",
+    "line_diff_modified": "var(keyword)",
+    "line_diff_deleted": "var(invalid)",
+    "brackets_foreground": "var(caret)",
+    "brackets_options": "underline",
+    "bracket_contents_foreground": "var(caret)",
+    "bracket_contents_options": "underline",
+    "tags_foreground": "var(caret)",
+    "tags_options": "stippled_underline",
+    "shadow": "color(var(bg) alpha(0.30))",
+    "shadow_width": "4"
+  },
+  "rules": [
+    {
+      "scope": "comment, punctuation.definition.comment",
+      "foreground": "var(comment)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "string",
+      "foreground": "var(string)"
+    },
+    {
+      "scope": "string.quoted punctuation.definition.string, string.template punctuation.definition.string",
+      "foreground": "color(var(string) alpha(0.70))"
+    },
+    {
+      "scope": "constant.character.escape, constant.other.placeholder",
+      "foreground": "var(constant)"
+    },
+    {
+      "scope": "constant.numeric",
+      "foreground": "var(constant)"
+    },
+    {
+      "scope": "constant.language, constant.other, support.constant",
+      "foreground": "var(constant)"
+    },
+    {
+      "scope": "keyword, keyword.control, keyword.declaration",
+      "foreground": "var(keyword)"
+    },
+    {
+      "scope": "keyword.operator",
+      "foreground": "color(var(keyword) alpha(0.90))"
+    },
+    {
+      "scope": "storage, storage.type",
+      "foreground": "var(type)"
+    },
+    {
+      "scope": "storage.modifier",
+      "foreground": "var(keyword)"
+    },
+    {
+      "scope": "entity.name.function, entity.name.method, support.function, variable.function, meta.function-call entity.name.function",
+      "foreground": "var(function)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "variable, variable.other, variable.other.readwrite",
+      "foreground": "var(variable)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "variable.parameter",
+      "foreground": "var(variable)"
+    },
+    {
+      "scope": "variable.language, variable.this",
+      "foreground": "var(keyword)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "entity.name.class, entity.name.type, entity.name.namespace, entity.name.struct, entity.name.enum, support.type, support.class, meta.type entity.name",
+      "foreground": "var(type)"
+    },
+    {
+      "scope": "entity.other.inherited-class",
+      "foreground": "var(type)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "entity.name.tag",
+      "foreground": "var(keyword)"
+    },
+    {
+      "scope": "entity.other.attribute-name",
+      "foreground": "var(variable)"
+    },
+    {
+      "scope": "punctuation.section, punctuation.separator, punctuation.terminator, punctuation.accessor, meta.brace, meta.delimiter",
+      "foreground": "color(var(fg) alpha(0.85))"
+    },
+    {
+      "scope": "entity.name.label, entity.name.constant",
+      "foreground": "var(constant)"
+    },
+    {
+      "scope": "support.module, support.other.namespace",
+      "foreground": "var(type)"
+    },
+    {
+      "scope": "invalid, invalid.illegal",
+      "foreground": "var(bg)",
+      "background": "var(invalid)"
+    },
+    {
+      "scope": "invalid.deprecated",
+      "foreground": "var(invalid)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "markup.heading, markup.heading entity.name",
+      "foreground": "var(keyword)",
+      "font_style": "bold"
+    },
+    {
+      "scope": "markup.bold",
+      "foreground": "var(function)",
+      "font_style": "bold"
+    },
+    {
+      "scope": "markup.italic",
+      "foreground": "var(variable)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "markup.underline.link, markup.underline.link.image",
+      "foreground": "var(string)",
+      "font_style": "underline"
+    },
+    {
+      "scope": "markup.raw.inline, markup.raw.block, markup.inline.raw",
+      "foreground": "var(string)"
+    },
+    {
+      "scope": "markup.quote",
+      "foreground": "var(comment)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "markup.list punctuation.definition.list_item",
+      "foreground": "var(keyword)"
+    },
+    {
+      "scope": "markup.inserted",
+      "foreground": "var(type)"
+    },
+    {
+      "scope": "markup.deleted",
+      "foreground": "var(invalid)"
+    },
+    {
+      "scope": "markup.changed",
+      "foreground": "var(keyword)"
+    },
+    {
+      "scope": "meta.diff.range, meta.diff.header",
+      "foreground": "var(comment)"
+    },
+    {
+      "scope": "punctuation.definition.deleted, markup.deleted.diff",
+      "foreground": "var(invalid)"
+    },
+    {
+      "scope": "punctuation.definition.inserted, markup.inserted.diff",
+      "foreground": "var(type)"
+    }
+  ]
+}

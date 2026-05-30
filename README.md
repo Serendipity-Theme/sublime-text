@@ -14,9 +14,9 @@ See other interfaces at the [official website](https://www.michaelandreuzza.com/
 
 ## Installation
 
-Copy `.tmTheme` files to `Packages/User/` or install via Package Control. Set **Preferences → Color Scheme** to Serendipity Midnight / Morning / Sunset.
+Install via Package Control, or copy the `.sublime-color-scheme` files into `Packages/User/`. Then set **Preferences → Color Scheme** to Serendipity Midnight / Morning / Sunset.
 
-Available files: `serendipity-midnight.tmTheme`, `serendipity-morning.tmTheme`, `serendipity-sunset.tmTheme`.
+Available files: `serendipity-midnight.sublime-color-scheme`, `serendipity-morning.sublime-color-scheme`, `serendipity-sunset.sublime-color-scheme`.
 
 ## Created by
 
