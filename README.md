@@ -6,7 +6,7 @@ Elegant, minimal, and clean color palette for your tools.
 
 See other interfaces at the [official website](https://www.michaelandreuzza.com/vscode/serendipity/).
 
-## Available themes
+## Available color schemes
 
 - **Midnight** — dark
 - **Morning** — light
